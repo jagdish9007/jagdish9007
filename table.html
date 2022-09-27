@@ -1,80 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User detail form</title>
-    <style>
-        body {
-            background-color: white;
-            margin: -8%;
+    <title> submittion form for pre-booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-        }
-
-        .img {
-            height: 0.5cm;
-            border: 1px solid;
-        }
-
-        .img1 {
-            height: 0.5cm;
-            border: 1px solid;
-        }
-
-        .img2 {
-            height: 0.5cm;
-            border: 1px solid;
-        }
-
-        .table {
-
-            background-color: rgb(158, 245, 18);
-            color: black;
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin: 200px;
-            padding: 60px;
-            border-radius: 1%;
-        }
-
-        .margin {
-            margin-left: 25%;
-        }
-        
-    </style>
 </head>
-
 <body>
-    <div class="table">
-        <div class="margin">
-            <table>
-                <h3> Step 1: User details</h3>
-                <tr> Name <input type="text" placeholder="enter your name"></tr> <br>
-                <tr> Email <input type="email" placeholder="enter your email"></tr> <br>
-                <tr> Phone <input type="text" placeholder="enter your phone number"></tr> <br>
+    <img class="bg" src="bg.jpg" alt="bg image">
+    <div class="container">
+        <h2> User Details </h2>
+        <hr>
+        <p> Hello all, Please full this form  for book your seat for training and placement program. </p>
+        <p>Thanks for filling this form, we are happy to see you joining this program.</p>
 
-                <h3> Step 2: Delivery Address</h3>
-                <tr> Address <input type="text" placeholder="enter your address"></tr> <br>
-                <tr> Pin code <input type="text" placeholder="enter your pin code"></tr> <br>
-                <tr> Country <input type="text" placeholder="enter your country"></tr> <br>
-
-                <h3> Step 3: Card Details</h3>
-                <tr> Card Type <input type="radio" name="name" value="name">Visa <img class="img"
+        <form action="table.php" method="post">
+            <p> <u> 1. Your Contact details</u></p>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+            <input type="address" name="address" id="address" placeholder="Enter your full address">
+            <p><u>2. Education details</u></p>
+            <input type="text" name="education" id="education" placeholder="Enter your gradution degree">
+            <p><u>3. Card details</u> </p>
+            <input type="radio" name="name" value="name">Visa <img class="img"
                         src="https://d28wu8o6itv89t.cloudfront.net/images/visalogopngtransparentpng-1579588235384.png"
-                        alt="Visa"> <input type="radio" name="name" value="Master card">Mastercard <img class="img1"
+                        alt="Visa">
+                        <input type="radio" name="name" value="Master card">Mastercard <img class="img1"
                         src="https://e7.pngegg.com/pngimages/648/903/png-clipart-mastercard-logo-logo-payment-visa-mastercard-paypal-mastercard-icon-text-service.png"
-                        alt="mastercard"> <input type="radio" name="name" value="Rupey">Rupay <img class="img2"
+                        alt="mastercard">
+                        <input type="radio" name="name" value="Rupey">Rupay <img class="img2"
                         src="https://w7.pngwing.com/pngs/123/955/png-transparent-india-rupay-debit-card-bank-credit-card-india-text-trademark-logo.png"
-                        alt="rupay"></tr><br>
-                <tr> Card Number <input type="text" placeholder="enter your card number"> </tr> <br>
-                <tr> Security Code <input type="text" placeholder="enter security code"></tr> <br>
-                <tr> Name On Card <input type="text" placeholder="enter name on card"></tr> <br>
-                <button type="button"> Buy Now </button> <button  type="button"> Reset </button>
-            </table>
-        </div>
-    </div>
-</body>
+                        alt="rupay">
+             
+            <input type="number" name="number" id="number" placeholder="Enter your card number">
+            <input type="text" name="code" id="code" placeholder="Enter your security code">
+            <input type="text" name="name" id="name" placeholder="Enter the name on card">
+            <button class="btn"> Book Now</button>
+            <button class="btn">Reset</button>
+        </form>
 
+    </div>
+    
+</body>
 </html>
